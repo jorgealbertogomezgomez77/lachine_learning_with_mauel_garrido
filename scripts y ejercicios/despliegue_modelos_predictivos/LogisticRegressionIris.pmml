@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.5.13"/>
+		<Timestamp>2019-04-09T23:23:55Z</Timestamp>
+	</Header>
+	<MiningBuildTask>
+		<Extension>PMMLPipeline(steps=[('mapper', DataFrameMapper(default=False, df_out=False,
+        features=[(['Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'], [ContinuousDomain(high_value=None, invalid_value_replacement=None,
+         invalid_value_treatment='return_invalid', low_value=None,
+         missing_value_replacement=None, missing_value_treatment='as_is',
+         missing_values=None, outlier_treatment='as_is', with_data=True,
+         with_statistics=True), Imputer(axis=0, copy=True, missing_values='NaN', strategy='mean', verbose=0)])],
+        input_df=False, sparse=False)),
+       ('pca', PCA(copy=True, iterated_power='auto', n_components=3, random_state=None,
+  svd_solver='auto', tol=0.0, whiten=False)),
+       ('selector', SelectKBest(k=2, score_func=&lt;function f_classif at 0x000001DE45112B70&gt;)),
+       ('classifier', LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=None, solver='warn',
+          tol=0.0001, verbose=0, warm_start=False))])</Extension>
+	</MiningBuildTask>
+	<DataDictionary>
+		<DataField name="Species" optype="categorical" dataType="integer">
+			<Value value="0"/>
+			<Value value="1"/>
+			<Value value="2"/>
+		</DataField>
+		<DataField name="Sepal.Length" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="4.3" rightMargin="7.9"/>
+		</DataField>
+		<DataField name="Sepal.Width" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="2.0" rightMargin="4.4"/>
+		</DataField>
+		<DataField name="Petal.Length" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="1.0" rightMargin="6.9"/>
+		</DataField>
+		<DataField name="Petal.Width" optype="continuous" dataType="double">
+			<Interval closure="closedClosed" leftMargin="0.1" rightMargin="2.5"/>
+		</DataField>
+	</DataDictionary>
+	<TransformationDictionary>
+		<DerivedField name="pca@1[0]" optype="continuous" dataType="double">
+			<Apply function="sum">
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Sepal.Length"/>
+						<Constant dataType="double">5.843333333333335</Constant>
+					</Apply>
+					<Constant dataType="double">0.3613865917853686</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Sepal.Width"/>
+						<Constant dataType="double">3.057333333333334</Constant>
+					</Apply>
+					<Constant dataType="double">-0.08452251406456868</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Petal.Length"/>
+						<Constant dataType="double">3.7580000000000027</Constant>
+					</Apply>
+					<Constant dataType="double">0.856670605949835</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Petal.Width"/>
+						<Constant dataType="double">1.199333333333334</Constant>
+					</Apply>
+					<Constant dataType="double">0.3582891971515507</Constant>
+				</Apply>
+			</Apply>
+		</DerivedField>
+		<DerivedField name="pca@1[1]" optype="continuous" dataType="double">
+			<Apply function="sum">
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Sepal.Length"/>
+						<Constant dataType="double">5.843333333333335</Constant>
+					</Apply>
+					<Constant dataType="double">0.656588771286842</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Sepal.Width"/>
+						<Constant dataType="double">3.057333333333334</Constant>
+					</Apply>
+					<Constant dataType="double">0.7301614347850268</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Petal.Length"/>
+						<Constant dataType="double">3.7580000000000027</Constant>
+					</Apply>
+					<Constant dataType="double">-0.17337266279585684</Constant>
+				</Apply>
+				<Apply function="*">
+					<Apply function="-">
+						<FieldRef field="Petal.Width"/>
+						<Constant dataType="double">1.199333333333334</Constant>
+					</Apply>
+					<Constant dataType="double">-0.07548101991746325</Constant>
+				</Apply>
+			</Apply>
+		</DerivedField>
+	</TransformationDictionary>
+	<MiningModel functionName="classification">
+		<MiningSchema>
+			<MiningField name="Species" usageType="target"/>
+			<MiningField name="Sepal.Length" missingValueReplacement="5.843333333333335" missingValueTreatment="asMean"/>
+			<MiningField name="Sepal.Width" missingValueReplacement="3.057333333333334" missingValueTreatment="asMean"/>
+			<MiningField name="Petal.Length" missingValueReplacement="3.7580000000000027" missingValueTreatment="asMean"/>
+			<MiningField name="Petal.Width" missingValueReplacement="1.199333333333334" missingValueTreatment="asMean"/>
+		</MiningSchema>
+		<ModelStats>
+			<UnivariateStats field="Sepal.Length">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="4.3" maximum="7.9" mean="5.843333333333335" standardDeviation="0.8253012917851409" median="5.8" interQuartileRange="1.3000000000000007"/>
+			</UnivariateStats>
+			<UnivariateStats field="Sepal.Width">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="2.0" maximum="4.4" mean="3.057333333333334" standardDeviation="0.43441096773549437" median="3.0" interQuartileRange="0.5"/>
+			</UnivariateStats>
+			<UnivariateStats field="Petal.Length">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="1.0" maximum="6.9" mean="3.7580000000000027" standardDeviation="1.7594040657753032" median="4.35" interQuartileRange="3.4999999999999996"/>
+			</UnivariateStats>
+			<UnivariateStats field="Petal.Width">
+				<Counts totalFreq="150.0" missingFreq="0.0" invalidFreq="0.0"/>
+				<NumericInfo minimum="0.1" maximum="2.5" mean="1.199333333333334" standardDeviation="0.7596926279021594" median="1.3" interQuartileRange="1.5"/>
+			</UnivariateStats>
+		</ModelStats>
+		<Segmentation multipleModelMethod="modelChain">
+			<Segment id="1">
+				<True/>
+				<RegressionModel functionName="regression" normalizationMethod="logit">
+					<MiningSchema>
+						<MiningField name="Sepal.Length"/>
+						<MiningField name="Sepal.Width"/>
+						<MiningField name="Petal.Length"/>
+						<MiningField name="Petal.Width"/>
+					</MiningSchema>
+					<Output>
+						<OutputField name="decisionFunction(0)" optype="continuous" dataType="double" feature="predictedValue" isFinalResult="false"/>
+					</Output>
+					<RegressionTable intercept="-1.857173786145289">
+						<NumericPredictor name="pca@1[0]" coefficient="-2.2228330097010427"/>
+						<NumericPredictor name="pca@1[1]" coefficient="1.2722515036841204"/>
+					</RegressionTable>
+				</RegressionModel>
+			</Segment>
+			<Segment id="2">
+				<True/>
+				<RegressionModel functionName="regression" normalizationMethod="logit">
+					<MiningSchema>
+						<MiningField name="Sepal.Length"/>
+						<MiningField name="Sepal.Width"/>
+						<MiningField name="Petal.Length"/>
+						<MiningField name="Petal.Width"/>
+					</MiningSchema>
+					<Output>
+						<OutputField name="decisionFunction(1)" optype="continuous" dataType="double" feature="predictedValue" isFinalResult="false"/>
+					</Output>
+					<RegressionTable intercept="-0.8068824617605816">
+						<NumericPredictor name="pca@1[0]" coefficient="0.24266783012193116"/>
+						<NumericPredictor name="pca@1[1]" coefficient="-1.5968447206195935"/>
+					</RegressionTable>
+				</RegressionModel>
+			</Segment>
+			<Segment id="3">
+				<True/>
+				<RegressionModel functionName="regression" normalizationMethod="logit">
+					<MiningSchema>
+						<MiningField name="Sepal.Length"/>
+						<MiningField name="Sepal.Width"/>
+						<MiningField name="Petal.Length"/>
+						<MiningField name="Petal.Width"/>
+					</MiningSchema>
+					<Output>
+						<OutputField name="decisionFunction(2)" optype="continuous" dataType="double" feature="predictedValue" isFinalResult="false"/>
+					</Output>
+					<RegressionTable intercept="-3.114431511014838">
+						<NumericPredictor name="pca@1[0]" coefficient="2.506636308961393"/>
+						<NumericPredictor name="pca@1[1]" coefficient="-0.9824240811938547"/>
+					</RegressionTable>
+				</RegressionModel>
+			</Segment>
+			<Segment id="4">
+				<True/>
+				<RegressionModel functionName="classification" normalizationMethod="simplemax">
+					<MiningSchema>
+						<MiningField name="Species" usageType="target"/>
+						<MiningField name="decisionFunction(0)"/>
+						<MiningField name="decisionFunction(1)"/>
+						<MiningField name="decisionFunction(2)"/>
+					</MiningSchema>
+					<Output>
+						<OutputField name="probability(0)" optype="continuous" dataType="double" feature="probability" value="0"/>
+						<OutputField name="probability(1)" optype="continuous" dataType="double" feature="probability" value="1"/>
+						<OutputField name="probability(2)" optype="continuous" dataType="double" feature="probability" value="2"/>
+					</Output>
+					<RegressionTable intercept="0.0" targetCategory="0">
+						<NumericPredictor name="decisionFunction(0)" coefficient="1.0"/>
+					</RegressionTable>
+					<RegressionTable intercept="0.0" targetCategory="1">
+						<NumericPredictor name="decisionFunction(1)" coefficient="1.0"/>
+					</RegressionTable>
+					<RegressionTable intercept="0.0" targetCategory="2">
+						<NumericPredictor name="decisionFunction(2)" coefficient="1.0"/>
+					</RegressionTable>
+				</RegressionModel>
+			</Segment>
+		</Segmentation>
+	</MiningModel>
+</PMML>
