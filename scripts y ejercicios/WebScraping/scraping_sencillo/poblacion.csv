@@ -1,0 +1,60 @@
+Europa ,UE ,País ,Nombre en español ,Nombre en idioma original ,País .1,Entidad administrativa ,Subentidad administrativa ,Población
+1,- ,TUR-01 ,Estambul ,İstanbul ,Bandera de Turquía Turquía ,Provincia de Estambul ,,14 657 434
+2,- ,RUS-0001 ,Moscú ,Москва ,Flag of Russia.svg Rusia ,Distrito federal Central ,Ciudad federal de Moscú ,12 380 664
+3,UE-001 ,GBR-01 ,Londres ,London ,Bandera de Reino Unido Reino Unido ,Inglaterra ,Gran Londres ,8 787 892
+4,- ,RUS-0002 ,San Petersburgo ,Санкт-Петербург ,Flag of Russia.svg Rusia ,Distrito federal del Noroeste ,Ciudad federal de San Petersburgo ,5 281 579
+5,UE-002 ,ALE-01 ,Berlín ,Berlin ,Flag of Germany.svg Alemania ,Berlín ,,3 469 849
+6,UE-003 ,ESP-01 ,Madrid ,,Flag of Spain.svg España ,Comunidad de Madrid ,,3 165 541
+7,- ,UKR-01 ,Kiev ,Київ ,Flag of Ukraine.svg Ucrania ,Óblast de Kiev ,,2 907 684
+8,UE-004 ,ITA-01 ,Roma ,,Flag of Italy.svg Italia ,Lacio ,Ciudad metropolitana de Roma Capital ,2 864 348
+9,UE-005 ,FRA-01 ,París ,Paris ,Flag of France.svg Francia ,Isla de Francia ,,2 243 739
+10,- ,AZE-01 ,Bakú ,Bakı ,Bandera de Azerbaiyán Azerbaiyán ,- ,Bakú ,2 181 800
+11,- ,BLR-01 ,Minsk ,Мінск ,Bandera de Bielorrusia Bielorrusia ,Provincia de Minsk ,,1 974 800
+12,UE-006 ,ROM-01 ,Bucarest ,București ,Flag of Romania.svg Rumania ,Bucarest ,,1 877 155
+13,UE-007 ,AUT-01 ,Viena ,Wien ,Flag of Austria.svg Austria ,Viena ,,1 840 573
+14,UE-008 ,ALE-02 ,Hamburgo ,Hamburg ,Flag of Germany.svg Alemania ,Hamburgo ,,1 787 408
+15,UE-009 ,HUN-01 ,Budapest ,,Flag of Hungary.svg Hungría ,Budapest ,,1 757 618
+16,UE-010 ,POL-01 ,Varsovia ,Warszawa ,Flag of Poland.svg Polonia ,Voivodato de Mazovia ,,1 748 916
+17,UE-011 ,ESP-02 ,Barcelona ,,Flag of Spain.svg España ,Cataluña ,Provincia de Barcelona ,1 608 746
+18,- ,UKR-02 ,Járkov ,Харків ,Flag of Ukraine.svg Ucrania ,Óblast de Járkov ,,1 445 098
+19,UE-012 ,ALE-03 ,Múnich ,München ,Flag of Germany.svg Alemania ,Baviera ,,1 450 381
+20,- ,SRB-01 ,Belgrado ,Београд ,Bandera de Serbia Serbia ,Ciudad de Belgrado ,,1 369 000
+21,UE-013 ,ITA-02 ,Milán ,Milano ,Flag of Italy.svg Italia ,Lombardía ,Ciudad metropolitana de Milán ,1 359 905
+22,UE-014 ,CZE-01 ,Praga ,Praha ,Flag of the Czech Republic.svg República Checa ,Región de Bohemia Central ,,1 280 508
+23,UE-015 ,BUL-01 ,Sofía ,София ,Bandera de Bulgaria Bulgaria ,Provincia de Sofía-Ciudad ,,1 286 383
+24,- ,RUS-0003 ,Nizni Nóvgorod ,Нижний Новгород ,Flag of Russia.svg Rusia ,Óblast de Nizni Nóvgorod ,,1 266 871
+25,- ,RUS-0004 ,Kazán ,Казань ,Flag of Russia.svg Rusia ,República de Tartaristán ,,1 231 878
+26,UE-016 ,GBR-02 ,Birmingham ,,Bandera de Reino Unido Reino Unido ,Inglaterra ,Midlands del Oeste ,1 123 000
+27,- ,RUS-0005 ,Samara ,Самара ,Flag of Russia.svg Rusia ,Óblast de Samara ,,1 169 719
+28,UE-017 ,BEL-01 ,Bruselas ,Bruxelles - Brussel ,Flag of Belgium (civil).svg Bélgica ,Región de Bruselas Capital ,,1 197 732
+29,- ,RUS-0006 ,Ufá ,Уфа ,Flag of Russia.svg Rusia ,República de Baskortostán ,,1 130 000
+30,- ,RUS-0007 ,Rostov del Don ,Ростов-на-Дону ,Flag of Russia.svg Rusia ,Óblast de Rostov ,,1 119 875
+31,- ,GEO-01 ,Tiflis ,თბილისი ,Bandera de Georgia Georgia ,Tiflis ,,1 082 400
+32,UE-018 ,ALE-04 ,Colonia ,Köln ,Flag of Germany.svg Alemania ,Renania del Norte-Westfalia ,,1 081 701
+33,- ,ARM-01 ,Ereván ,Երևան ,Bandera de Armenia Armenia ,Ereván ,,1 074 000
+34,- ,RUS-0008 ,Perm ,Пермь ,Flag of Russia.svg Rusia ,Krai de Perm ,,1 041 884
+35,- ,RUS-0009 ,Vorónezh ,Воронеж ,Flag of Russia.svg Rusia ,Óblast de Vorónezh ,,1 032 382
+36,- ,RUS-0010 ,Volgogrado ,Волгоград ,Flag of Russia.svg Rusia ,Óblast de Volgogrado ,,1 016 137
+37,- ,UKR-03 ,Odesa ,Одеса ,Flag of Ukraine.svg Ucrania ,Óblast de Odesa ,,1 010 783
+38,- ,UKR-04 ,Dnipró ,Дніпро ,Flag of Ukraine.svg Ucrania ,Óblast de Dnipropetrovsk ,,983 836
+39,UE-019 ,ITA-03 ,Nápoles ,Napoli ,Flag of Italy.svg Italia ,Campania ,Ciudad metropolitana de Nápoles ,972 212
+40,- ,UKR-05 ,Donetsk ,Донецьк ,Flag of Ukraine.svg Ucrania ,Óblast de Donetsk ,,929 063
+41,UE-020 ,SWE-01 ,Estocolmo ,Stockholm ,Flag of Sweden.svg Suecia ,Provincia de Estocolmo ,,917 297
+42,UE-021 ,ITA-04 ,Turín ,Torino ,Flag of Italy.svg Italia ,Piamonte ,Ciudad metropolitana de Turín ,889 600
+43,- ,RUS-0011 ,Krasnodar ,Краснодар ,Flag of Russia.svg Rusia ,Krai de Krasnodar ,,881 476
+44,- ,RUS-0012 ,Sarátov ,Саратов ,Flag of Russia.svg Rusia ,Óblast de Sarátov ,,843 460
+45,UE-022 ,FRA-02 ,Marsella ,Marseille ,Flag of France.svg Francia ,Provenza-Alpes-Costa Azul ,Bocas del Ródano ,855 000
+46,UE-023 ,NED-01 ,Ámsterdam1​ ,Amsterdam ,Flag of the Netherlands.svg Países Bajos ,Holanda Septentrional ,,825 080
+47,UE-024 ,ESP-03 ,Valencia ,València ,Flag of Spain.svg España ,Comunidad Valenciana ,Provincia de Valencia ,790 201
+48,UE-025 ,GBR-03 ,Leeds ,,Bandera de Reino Unido Reino Unido ,Inglaterra ,,781 700
+49,UE-026 ,DEN-01 ,Copenhague ,København ,Bandera de Dinamarca Dinamarca ,Región Capital ,,763 908
+50,UE-027 ,POL-02 ,Cracovia ,Kraków ,Flag of Poland.svg Polonia ,Voivodato de Pequeña Polonia ,,762 448
+51,- ,UKR-06 ,Zaporizhia ,Запоріжжя ,Flag of Ukraine.svg Ucrania ,Óblast de Zaporizhia ,,748 984
+52,UE-028 ,ALE-05 ,Fráncfort del Meno ,Frankfurt am Main ,Flag of Germany.svg Alemania ,Hesse ,,732 688
+53,- ,UKR-07 ,Leópolis ,Львів ,Flag of Ukraine.svg Ucrania ,Óblast de Lviv ,,727 968
+54,- ,RUS-0013 ,Toliatti ,Тольятти ,Flag of Russia.svg Rusia ,Óblast de Samara ,,710 567
+55,UE-029 ,CRO-01 ,Zagreb ,,Flag of Croatia.svg Croacia ,Ciudad de Zagreb ,,698 966
+56,UE-030 ,LAT-01 ,Riga ,Rīga ,Bandera de Letonia Letonia ,,,698 529
+57,UE-031 ,POL-03 ,Lodz ,Łódź ,Flag of Poland.svg Polonia ,Voivodato de Lodz ,,696 503
+58,UE-032 ,ESP-04 ,Sevilla ,,Flag of Spain.svg España ,Andalucía ,Provincia de Sevilla ,690 566
+59,UE-033 ,ITA-05 ,Palermo ,,Flag of Italy.svg Italia ,Sicilia ,Ciudad metropolitana de Palermo ,674 435
