@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/theme.css.jsf?ln=primefaces-sregobmx" /><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/fa/font-awesome.css.jsf?ln=primefaces&amp;v=5.2" /><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/citas.webGobMx.css.jsf?ln=css" /><script type="text/javascript" src="/citas.webportal/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.2"></script><script type="text/javascript" src="/citas.webportal/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.2"></script><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.2" /><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/watermark/watermark.css.jsf?ln=primefaces&amp;v=5.2" /><script type="text/javascript" src="/citas.webportal/javax.faces.resource/watermark/watermark.js.jsf?ln=primefaces&amp;v=5.2"></script><script type="text/javascript" src="/citas.webportal/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.2"></script><script type="text/javascript">if(window.PrimeFaces){}</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<style type="text/css">
+			@import url("https://framework-gb.cdn.gob.mx/assets/styles/main.css");
+		</style>
+		
+		
+		<script type="text/javascript">
+		  var _paq = _paq || [];
+		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+		  _paq.push(["setCookieDomain", "*.mexitel.sre.gob.mx"]);
+		  _paq.push(["setDomains", ["*.mexitel.sre.gob.mx/citas.webportal/pages/public/login/login.jsf"]]);
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+		    var u="https://analytics.sre.gob.mx/piwik/";
+		    _paq.push(['setTrackerUrl', u+'piwik.php']);
+		    _paq.push(['setSiteId', '2']);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<noscript><p><img src="https://analytics.sre.gob.mx/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0;" /></p></noscript>
+		
+	
+        <title>Citas SRE</title>
+		<script type="text/javascript" src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+		<script type="text/javascript" src="https://framework-gb.cdn.gob.mx/data/encuesta_v1.0/encuestas.js"></script><script type="text/javascript" src="/citas.webportal/javax.faces.resource/citasUtilitis.js.jsf?ln=js"></script>
+		<link rel="shortcut icon" href="/citas.webportal/favicon.ico" /></head><body><script type="text/javascript" src="/citas.webportal/javax.faces.resource/digital_Analytix.js.jsf?ln=js"></script> 
+				
+		
+		<script type="text/javascript" src="https://sb.scorecardresearch.com/c2/17183199/ct.js"></script>
+		
+
+		<div class="container" style="padding-left:0px; padding-right:0px;">
+		</div>
+		<div id="divLayoutNoMenu" class="container" style="padding-left:0px; padding-right:0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="col-md-12" style="padding-left:0px;">
+							<ol id="containerbreadcrumbSinMenuGobMx" class="breadcrumb">
+							  <li><a href="https://www.gob.mx"><i class="icon icon-home"></i></a></li>
+							  <li id="inicioBreadcrumbLayout" class="active">Inicio</li>
+							</ol>
+						</div><span id="j_idt20"></span><script type="text/javascript">$(function(){PrimeFaces.focus('j_username');});</script>
+     	
+	     <script type="text/javascript">
+	     	/*Pages digita_analitix*/
+	     	
+			udm_('https://sb.scorecardresearch.com/b?c1=2&c2=17183199&ns_site=gobmx&name=sre.preregistro.login');
+			 
+
+			function enviar_formulario(){
+				$("#mensajesLogin").hide();
+				
+				var user  = $("#j_username").val();
+				var value = $("#j_password").val();
+				
+				
+				if(user != "" && value != ""){
+			   		document.loginForm.submit();
+				}else {
+					if($("#mensajesError").text() == "")
+						$("#mensajesLogin").show();
+					if(user == "")
+						$("#j_username").css("border-color","#FF0000");
+					if(value == "")
+						$("#j_password").css("border-color","#FF0000");
+				}
+			}
+			
+			function resetEmailForm(){
+				//Es pequeña, es mas rapido limpiarla desde el cliente que repintarla toda
+				document.getElementById("formOlvideContrasena:recpswCorreo").value="";
+				document.getElementById("formOlvideContrasena:emailPass").value="false";
+				document.getElementById("formOlvideContrasena:botonrecuperar").disabled=false;
+				document.getElementById("formOlvideContrasena:mensajesRegistro2").innerHTML="";
+				$(document.getElementById("formOlvideContrasena:recpswCorreo")).removeClass( "ui-state-error" );
+			}
+			
+			
+			function showEmailDialog(){
+				var pass=document.getElementById("formOlvideContrasena:emailPass").value;
+				if(pass=="true"){
+					PF('dlg2').hide();
+					PF('dlg3').show();
+				}
+			}
+
+		</script>
+		<noscript><p><img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=17183199&amp;ns_site=gobmx&amp;name=sre.preregistro.login" height="1" width="1" alt="*" /></p></noscript>
+		 
+		 <style type="text/css">
+		 	.linkCitas{
+		 		padding: 0 0;
+		 		margin-bottom: 5px;
+		 	}
+		 	.extbutton{
+		 		margin-top: -45px;
+		 	}
+		 	.ui-button{
+		 		padding: 2px;
+		 	}
+		 	
+		 	.ui-center .ui-dialog-title{
+		 		width:100% !important; 
+		 	}
+		 	
+		 	.modal-body {
+			    padding: 15px 40px 20px;
+			}
+			
+			.ui-layout-unit-content{
+				border: none !important;
+			}
+		 </style>
+		 
+		<div class="container">
+			<br />
+			<div class="row" style="margin-top:130px">						
+			
+					<div class="col-md-9" style="padding-left:0px;"><table id="panelHabilitaMensajeMexitel">
+<tbody>
+<tr>
+<td>
+								<div class="col-md-12" style="padding-left:0px;">
+									<h1 align="left">Programación de citas MEXITEL</h1>
+								</div>
+								
+								<div class="col-md-12" style="padding-left:0px;">
+									<h5 align="left">Servicio de citas para los trámites en las Embajadas y Consulados de México en el exterior.</h5>
+								</div></td>
+</tr>
+</tbody>
+</table>
+<img id="j_idt24" height="10px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" />
+						<div class="text-left show-grid">
+							<h2> Iniciar sesión </h2>
+						</div>
+	
+						<form method="post" action="j_security_check" name="loginForm" class="form-horizontal" id="loginForm">
+					    	<div class="row">
+								<div class="col-md-12" style="padding-bottom: 20px;">
+									<div class="alert alert-danger manegementErrorGenerico" id="mensajesLogin" style="display: none;">
+                  						<strong id="messsageloginError">Usuario y contraseña obligatorios.</strong>
+                					</div><div id="mensajesError" class="ui-messages ui-widget manegementError" aria-live="polite"></div>
+								</div>
+							</div>
+		                
+		                	<div class="form-group" styleClass="display:inline-block"><label id="labelCorreoSimbolo" for="j_username" class="col-sm-4 control-label display:inline">
+Correo electrónico<label id="selectCorreoSimbolo" for="j_username" class="simboloRequeridoPendiente">
+*</label><label>
+:</label></label>
+								<div class="col-sm-8"><input id="j_username" name="j_username" type="text" autocomplete="off" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" /><script id="j_username_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_username",{id:"j_username",widgetVar:"widget_j_username"});</script><script id="j_idt29_s" type="text/javascript">$(function(){PrimeFaces.cw("Watermark","widget_j_idt29",{id:"j_idt29",widgetVar:"widget_j_idt29",value:"Ingresa tu correo electrónico",target:"j_username"},"watermark");});</script><img id="j_idt30" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /><span id="selectCorreoSimbo"></span>
+								</div>
+							</div>
+							
+							<div class="form-group"><label id="labelPasswordSimbolo" for="j_password" class="col-sm-4 control-label display:inline">
+Contraseña<label id="selectPasswordSimbolo" for="j_password" class="simboloRequeridoPendiente">
+*</label><label>
+:</label></label>
+								<div class="col-sm-8"><input id="j_password" name="j_password" type="password" class="ui-inputfield ui-password ui-widget ui-state-default ui-corner-all form-control" autocomplete="off" aria-required="true" /><script id="j_password_s" type="text/javascript">$(function(){PrimeFaces.cw("Password","widget_j_password",{id:"j_password",widgetVar:"widget_j_password"});});</script><script id="j_idt34_s" type="text/javascript">$(function(){PrimeFaces.cw("Watermark","widget_j_idt34",{id:"j_idt34",widgetVar:"widget_j_idt34",value:"Ingresa tu contraseña",target:"j_password"},"watermark");});</script><span id="selectPasswordSimbo"></span>
+								</div>
+							</div>
+							
+							</form>
+<form id="recordarForm" name="recordarForm" method="post" action="/citas.webportal/pages/public/login/login.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="recordarForm" value="recordarForm" />
+
+								<div class="col-sm-offset-4 col-sm-8">
+									<div class="form-group">
+										<div class="col-sm-6"><input id="recordarForm:check" type="checkbox" name="recordarForm:check" onclick="PrimeFaces.ab({s:this,e:&quot;valueChange&quot;,f:&quot;recordarForm&quot;,p:&quot;recordarForm:check recordarForm:check&quot;,ps:true,pa:[{name:&quot;bypassFilter&quot;,value:&quot;true&quot;}]});" /><img id="recordarForm:j_idt38" width="2px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /><span style="font-weight:normal">Recordarme</span>
+										</div>
+										<div class="col-sm-6 text-right" onclick="PF('dlg2').show();">
+											<button type="button" class="btn btn-link linkCitas">¿Olvidaste tu contraseña?
+											</button>
+										</div>
+									</div>
+								</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-1780185791390416314:-4955043691685043778" autocomplete="off" />
+</form><img id="j_idt43" height="10px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" />
+							
+							<div class="row">
+				    			<div class="col-md-4 text-right" style="padding-top: 6px;"><span class="paleta-escala3 texto-mid">* Campos obligatorios</span>
+								</div>			
+				
+								<div class="col-md-offset-2 col-md-4">
+									  <div class="col-sm-offset-12 col-sm-4 text-right"><input id="btnLoginII" type="submit" name="btnLoginII" value="Ingresar" style="width: 134px; " class="btn btn-primary" onclick="uid_call('directory.login.button1btnLoginII','clickin');enviar_formulario()" />
+									  </div>
+<form id="formRegistroCta" name="formRegistroCta" method="post" action="/citas.webportal/pages/public/login/login.jsf" class="form-horizontal" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formRegistroCta" value="formRegistroCta" />
+
+										<div class="row">
+											<div class="col-sm-11 text-right extbutton"><input id="formRegistroCta:registroId" type="submit" name="formRegistroCta:registroId" value="Crear una cuenta" class="btn btn-default" onclick="uid_call('directory.login.button2registroId','clickin')" />
+											</div>
+											</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-1780185791390416314:-4955043691685043778" autocomplete="off" />
+</form>
+								</div>
+							</div>
+					</div>
+				
+					<div class="col-md-12" align="left"><img id="j_idt51" height="50px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /><div id="j_idt52" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-east" style="font-weight:normal !important; border: none;"><div class="ui-layout-unit-content ui-widget-content"><?xml version="1.0" encoding="ISO-8859-1" ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<div class="alert alert-info">
+				<div class="col-md-12;alert alert-info" style="padding-left:0px; text-align: center; font-size: 16px;font-family:Open Sans">
+						<h><strong>Aviso de privacidad simplificado para trámites en Oficinas Consulares</strong></h>
+				</div>
+				<div class="col-md-12;alert alert-info" style="white-space:pre-line; text-align: left; font-size: 16px;font-family:Open Sans;">
+						<h>La Secretaría de Relaciones Exteriores es la responsable del tratamiento de los datos personales que usted proporcione, y que serán recabados a través del servicio de citas MEXITEL. Toda su información se encuentra protegida por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, y demás normatividad aplicable.</h>
+				</div>	
+				<div class="col-md-12;alert alert-info" style="white-space:pre-line; text-align: left; font-size: 16px;font-family:Open Sans;">
+						<h>La información requerida es necesaria para prestar el servicio y los datos personales recabados serán utilizados para identificar al solicitante y verificar que se cumpla con la normatividad de la materia. Consulte los avisos de privacidad integrales para cada uno de los tramites ingresando en el vínculo electrónico <a href="https://sre.gob.mx/avisos-de-privacidad-tramites" target="_new" style="color: rgb(0,0,255)">https://sre.gob.mx/avisos-de-privacidad-tramites</a>.</h>
+				</div>														
+	</div>	
+						
+			
+</html></div></div>
+					</div>
+					
+					<div class="col-sm-12" align="left"><img id="j_idt56" height="50px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /><div id="j_idt57" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-east" style="font-size: small !important; border: none;"><div class="ui-layout-unit-content ui-widget-content"><?xml version="1.0" encoding="ISO-8859-1" ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+            <div style="text-align: center;">
+                <label style="font-weight: 500 !important; color:#545454;">Derechos Reservados © 2017 - Secretaría de Relaciones Exteriores</label>
+                <br />
+                <label style="font-weight: 500 !important; color:#545454;">|-MSMexitel_5|</label>
+            </div>
+</html></div></div>
+					</div>
+					
+					<div class="col-md-4">
+					</div>
+			</div>
+		</div><div id="modalDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container ui-center" style="text-align:center"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="modalDialog_title" class="ui-dialog-title">Recuperar contraseña</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+			
+			<div class="modal-body">
+<form id="formOlvideContrasena" name="formOlvideContrasena" method="post" action="/citas.webportal/pages/public/login/login.jsf" class="form-horizontal" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formOlvideContrasena" value="formOlvideContrasena" />
+
+					
+					<div class="form-group"><div id="formOlvideContrasena:mensajesRegistro2" class="ui-messages ui-widget formularioCentrado" aria-live="polite"></div>
+					</div><img id="formOlvideContrasena:j_idt64" height="5px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" />
+					<div class="form-group">Para restablecer la contraseña, introduce la dirección de correo electrónico que utilizaste para iniciar sesión en el portal.
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-4 col-sm-4"><label for="formOlvideContrasena:recpswCorreo" class="sr-only">
+Correo electrónico:</label><input id="formOlvideContrasena:recpswCorreo" name="formOlvideContrasena:recpswCorreo" type="text" autocomplete="off" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" /><script id="formOlvideContrasena:recpswCorreo_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formOlvideContrasena_recpswCorreo",{id:"formOlvideContrasena:recpswCorreo",widgetVar:"widget_formOlvideContrasena_recpswCorreo"});</script><script id="formOlvideContrasena:j_idt69_s" type="text/javascript">$(function(){PrimeFaces.cw("Watermark","widget_formOlvideContrasena_j_idt69",{id:"formOlvideContrasena:j_idt69",widgetVar:"widget_formOlvideContrasena_j_idt69",value:"Correo electrónico",target:"formOlvideContrasena:recpswCorreo"},"watermark");});</script><input id="formOlvideContrasena:emailPass" type="hidden" name="formOlvideContrasena:emailPass" value="false" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-5 text-right"><button id="formOlvideContrasena:j_idt71" name="formOlvideContrasena:j_idt71" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('dlg2').hide();return false;;" type="button"><span class="ui-button-text ui-c">Cerrar</span></button><script id="formOlvideContrasena:j_idt71_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formOlvideContrasena_j_idt71",{id:"formOlvideContrasena:j_idt71",widgetVar:"widget_formOlvideContrasena_j_idt71"});</script>
+						</div>
+						<div class="col-sm-offset-2  text-right"><button id="formOlvideContrasena:botonrecuperar" name="formOlvideContrasena:botonrecuperar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn btn-primary pull-right" onclick="this.disabled=true;uid_call('directory.login.button3botonRecuperarPassword','clickin');PrimeFaces.ab({s:&quot;formOlvideContrasena:botonrecuperar&quot;,p:&quot;formOlvideContrasena:botonrecuperar formOlvideContrasena:recpswCorreo&quot;,u:&quot;formOlvideContrasena:botonrecuperar formOlvideContrasena outerPG&quot;,ps:true,onco:function(xhr,status,args){showEmailDialog();},pa:[{name:&quot;bypassFilter&quot;,value:&quot;true&quot;}]});return false;" type="submit"><span class="ui-button-text ui-c">Recuperar </span></button><script id="formOlvideContrasena:botonrecuperar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formOlvideContrasena_botonrecuperar",{id:"formOlvideContrasena:botonrecuperar",widgetVar:"widget_formOlvideContrasena_botonrecuperar"});</script>
+						</div>
+					</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-1780185791390416314:-4955043691685043778" autocomplete="off" />
+</form>					
+			</div></div></div><script id="modalDialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dlg2",{id:"modalDialog",widgetVar:"dlg2",draggable:false,resizable:false,modal:true,appendTo:"@(body)",onShow:function(){resetEmailForm();}});});</script><div id="outerPG"><div id="modalDialog2" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="text-align:center;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="modalDialog2_title" class="ui-dialog-title">Recuperar contraseña</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><table class="formularioCentrado">
+<tbody>
+<tr>
+<td><span id="wer2" class="textoInstitucionalSubtitulo">No fue posible realizar el envío de correo. Intenta más tarde.</span></td>
+</tr>
+</tbody>
+</table>
+<img id="j_idt77" height="5px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /><table class="formularioCentrado">
+<tbody>
+<tr>
+<td><button id="j_idt79" name="j_idt79" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PF('dlg3').hide();uid_call('directory.login.button4recuperpswOK','clickin');" type="button"><span class="ui-button-text ui-c">Aceptar</span></button><script id="j_idt79_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt79",{id:"j_idt79",widgetVar:"widget_j_idt79"});</script></td>
+</tr>
+</tbody>
+</table>
+</div></div><script id="modalDialog2_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dlg3",{id:"modalDialog2",widgetVar:"dlg3",draggable:false,resizable:false,modal:true,appendTo:"@(body)",closeOnEscape:true});});</script></div>
+					</div>
+					<div class="col-md-4"><?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/theme.css.jsf?ln=primefaces-sregobmx" /><link type="text/css" rel="stylesheet" href="/citas.webportal/javax.faces.resource/fa/font-awesome.css.jsf?ln=primefaces&amp;v=5.2" /><script type="text/javascript">if(window.PrimeFaces){}</script><div id="j_idt84"></div><script id="j_idt84_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt84",{id:"j_idt84",widgetVar:"widget_j_idt84",start:function(){PF('statusDialog').show();},complete:function(){PF('statusDialog').hide();}});});</script><div id="j_idt85" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="text-align: center;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt85_title" class="ui-dialog-title">Procesando...</span></div><div class="ui-dialog-content ui-widget-content"><img id="j_idt86" src="/citas.webportal/javax.faces.resource/ajax-loader.gif.jsf?ln=images" alt="" /></div></div><script id="j_idt85_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","statusDialog",{id:"j_idt85",widgetVar:"statusDialog",draggable:false,resizable:false,modal:true,width:"200",appendTo:"@(body)"});});</script></head><body>
+<form id="j_idt88" name="j_idt88" method="post" action="/citas.webportal/pages/public/login/login.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt88" value="j_idt88" />
+
+		<div class="ui-grid ui-grid-responsive" align="right">
+			<div><table>
+<tbody>
+<tr>
+<td>Idioma:</td>
+<td><img id="j_idt88:j_idt92" width="2px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /></td>
+<td>
+<script type="text/javascript" src="/citas.webportal/javax.faces.resource/jsf.js.jsf?ln=javax.faces"></script>
+<a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt88'),{'j_idt88:j_idt93':'j_idt88:j_idt93','language':'es'},'');return false"><img src="/citas.webportal/javax.faces.resource/mex.png.jsf?ln=images/flags" class="non-transparent" /></a></td>
+<td><img id="j_idt88:j_idt96" width="2px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /></td>
+<td><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt88'),{'j_idt88:j_idt97':'j_idt88:j_idt97','language':'en'},'');return false"><img src="/citas.webportal/javax.faces.resource/eua.png.jsf?ln=images/flags" class="transparent" /></a></td>
+<td><img id="j_idt88:j_idt100" width="2px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /></td>
+<td><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt88'),{'j_idt88:j_idt101':'j_idt88:j_idt101','language':'fr'},'');return false"><img src="/citas.webportal/javax.faces.resource/fra.png.jsf?ln=images/flags" class="transparent" /></a></td>
+<td><img id="j_idt88:j_idt104" width="2px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /></td>
+<td><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt88'),{'j_idt88:j_idt105':'j_idt88:j_idt105','language':'zh'},'');return false"><img src="/citas.webportal/javax.faces.resource/chi.png.jsf?ln=images/flags" class="transparent" /></a></td>
+<td><img id="j_idt88:j_idt108" width="2px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /></td>
+<td><a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt88'),{'j_idt88:j_idt109':'j_idt88:j_idt109','language':'pt'},'');return false"><img src="/citas.webportal/javax.faces.resource/brazil.gif.jsf?ln=images/flags" class="transparent" /></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><a id="j_idt88:j_idt113" href="#" class="ui-commandlink ui-widget" onclick="window.open('/citas.webportal/pages/public/faq.jsf', 'PreguntasFrecuentes', 'resizable=yes, menubar=no, toolbar=no, scrollbars=yes'); return false;;PrimeFaces.ab({s:&quot;j_idt88:j_idt113&quot;});return false;" type="button">Preguntas frecuentes</a></td>
+</tr>
+</tbody>
+</table>
+
+			
+			</div>
+		</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-1780185791390416314:-4955043691685043778" autocomplete="off" />
+</form><div id="modalDialogCallback" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" style="text-align:left;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="modalDialogCallback_title" class="ui-dialog-title">Ayuda telefónica de un operador</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content">
+		<div class="modal-body">
+<form id="formWebCallback" name="formWebCallback" method="post" action="/citas.webportal/pages/public/login/login.jsf" class="form-horizontal" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formWebCallback" value="formWebCallback" />
+
+			<div class="form-group">Servicio de trámites de pasaportes en territorio mexicano. 
+					<br />Por favor introduce un número telefónico y tu nombre completo para que un operador se comunique a la brevedad.
+				</div>
+				<div class="form-group">
+					<div class="col-sm-4 text-right"><label for="formWebCallback:telefono" class="textoInstitucionalSubtitulo">
+Número telefónico a 10 dígitos:</label>
+					</div>
+					<div class="col-sm-4"><input id="formWebCallback:telefono" name="formWebCallback:telefono" type="text" maxlength="10" aria-required="true" class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all form-control" /><script id="formWebCallback:telefono_s" type="text/javascript">PrimeFaces.cw("InputMask","widget_formWebCallback_telefono",{id:"formWebCallback:telefono",widgetVar:"widget_formWebCallback_telefono",mask:"(999) 999-9999"});</script>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-4 text-right"><label for="formWebCallback:nombreCompleto" class="textoInstitucionalSubtitulo">
+Nombre completo:</label>
+					</div>
+					<div class="col-sm-4"><input id="formWebCallback:nombreCompleto" name="formWebCallback:nombreCompleto" type="text" maxlength="10" onblur="javascript:this.value=this.value.toUpperCase();" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" /><script id="formWebCallback:nombreCompleto_s" type="text/javascript">PrimeFaces.cw("InputText","widget_formWebCallback_nombreCompleto",{id:"formWebCallback:nombreCompleto",widgetVar:"widget_formWebCallback_nombreCompleto"});</script>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-4"><button id="formWebCallback:j_idt128" name="formWebCallback:j_idt128" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;formWebCallback:j_idt128&quot;,u:&quot;outerPG2 formWebCallback:telefono formWebCallback:nombreCompleto&quot;,onco:function(xhr,status,args){if (args &amp;&amp; !args.validationFailed){  PF('dlg4').hide();PF('dlg5').show();};}});return false;" style="margin-right: 0px;" type="submit"><span class="ui-button-text ui-c">Enviar</span></button><script id="formWebCallback:j_idt128_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formWebCallback_j_idt128",{id:"formWebCallback:j_idt128",widgetVar:"widget_formWebCallback_j_idt128"});</script><img id="formWebCallback:j_idt129" width="5px" alt="" src="/citas.webportal/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.2" /><button id="formWebCallback:j_idt130" name="formWebCallback:j_idt130" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only secundario" onclick="PF('dlg4').hide();;PrimeFaces.ab({s:&quot;formWebCallback:j_idt130&quot;,u:&quot;formWebCallback:telefono formWebCallback:nombreCompleto&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Cancelar</span></button><script id="formWebCallback:j_idt130_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_formWebCallback_j_idt130",{id:"formWebCallback:j_idt130",widgetVar:"widget_formWebCallback_j_idt130"});</script>
+					</div>
+				</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-1780185791390416314:-4955043691685043778" autocomplete="off" />
+</form>
+		</div></div></div><script id="modalDialogCallback_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dlg4",{id:"modalDialogCallback",widgetVar:"dlg4",draggable:false,resizable:false,modal:true,appendTo:"@(body)",closeOnEscape:true});});</script><span id="outerPG2"><div id="modalDialog5" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container appenToBodyDialog" style="text-align:center;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="modalDialog5_title" class="ui-dialog-title">Ayuda telefónica de un operador</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><table class="formularioCentrado">
+<tbody>
+<tr>
+<td><span id="wer4" class="textoInstitucionalSubtitulo">Ha ocurrido un error al enviar sus datos favor de intentar más tarde</span></td>
+</tr>
+</tbody>
+</table>
+
+				<br /><table class="formularioCentrado">
+<tbody>
+<tr>
+<td><button id="j_idt136" name="j_idt136" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only textoInstitucionallink" onclick="PF('dlg5').hide();;" type="button"><span class="ui-button-text ui-c">Aceptar</span></button><script id="j_idt136_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt136",{id:"j_idt136",widgetVar:"widget_j_idt136"});</script></td>
+</tr>
+</tbody>
+</table>
+</div></div><script id="modalDialog5_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","dlg5",{id:"modalDialog5",widgetVar:"dlg5",draggable:false,resizable:false,modal:true,appendTo:"@(body)",closeOnEscape:true});});</script></span></body>
+		 
+</html>
+					</div>
+				</div>
+			</div>
+	</div>
+		<div class="bottom-buffer"></div></body>
+</html>
